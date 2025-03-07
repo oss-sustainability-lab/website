@@ -1,0 +1,144 @@
+---
+layout: default
+title: Team
+id: team
+permalink: /team/
+---
+
+<section class="hero hero--programs">
+  <div class="hero__content">
+    <svg class="coin"  width="100" height="100" viewBox="0 0 100 100" fill="none">
+      <path d="M41.6663 12.5H33.333V20.8333H24.9997V29.1667H33.333V20.8333H41.6663V29.1667H49.9997V37.5H41.6663V45.8333H33.333V54.1667H24.9997V62.5H16.6663V54.1667H8.33301V62.5H16.6663V70.8333H24.9997V62.5H41.6663V70.8333H49.9997V79.1667H41.6663V87.5H49.9997V79.1667H58.333V70.8333H49.9997V54.1667H58.333V45.8333H66.6663V54.1667H74.9997V62.5H83.333V54.1667H91.6664V45.8333H83.333V54.1667H74.9997V45.8333H66.6663V37.5H74.9997V20.8333H58.333V29.1667H49.9997V20.8333H41.6663V12.5Z" fill="white"/>
+    </svg>
+    <h1 class="h0 m-0">Our Team</h1>
+  </div>
+
+  <svg class="hero__subtract-top-right" viewBox="0 0 164 164">
+    <path d="M0,0c13.3,0,24,10.7,24,24v92c0,13.3,10.7,24,24,24h92c13.2,0,24,10.7,24,24V0H0Z" fill="#fff"/>
+  </svg>
+
+  <svg class="hero--programs__shape" viewBox="0 0 654 196">
+    <path d="M630,0H0v196h490c13.3,0,24-10.7,24-24v-92c0-13.3,10.7-24,24-24h92c13.2,0,24-10.7,24-24v-8c0-13.3-10.8-24-24-24Z" fill="#0f0f0f"/>
+  </svg>
+</section>
+
+<hr />
+
+<div class="wrapper-thin py-6 py-lg-8 text-center">
+  <p class="h2">The OSS Sustainability Lab is an independent, grant-funded project, supported by the Wellcome trust. </p>
+
+  <img class="mt-4" src="/assets/images/wellcome-logo-black.png" alt="Wellcome" />
+</div>
+
+<hr />
+
+<section class="team-section wrapper py-6">
+  <div class="col-md-8 col-lg-7 mb-3">
+    <p class="h4 text-gray">The team is made up of an interdisciplinary team bringing experience from non-profit capacity building, academic science, humanities and social sciences, and business development/administration.</p>
+  </div>
+
+  <ul class="team-list">
+    <li class="d-none d-md-block"></li>
+
+    {% for team in site.data.team %}
+    {% assign slug = team.name | slugify %}
+
+      <article class="team-preview"{% if team.bio %} data-modal="{{ slug }}{% endif %}">
+        <figure class="team-preview-image">
+          <img src="/assets/images/team/{{ team.img }}" alt="{{ team.name }}" />
+        </figure>
+        <div>
+            <span>
+              <h3 class="h4">{{ team.name }}</h3>
+              <p class="team-preview__title">{{ team.title }}</p>
+            </span>
+          {% if team.bio %}
+          <svg class="team-preview__open" width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M0.393333 19.2497L2.75036 21.6067L16.8925 7.46454L19.2495 9.82157L21.6065 7.46454L19.2495 5.10752L21.6065 2.7505L19.2495 0.393475L16.8925 2.7505L14.5355 0.393476L12.1784 2.7505L14.5355 5.10752L0.393333 19.2497ZM7.4644 2.7505L9.82142 0.393476L12.1784 2.7505L9.82142 5.10752L7.4644 2.7505ZM7.4644 2.7505L5.10738 5.10752L2.75036 2.7505L5.10738 0.393475L7.4644 2.7505ZM19.2495 14.5356L21.6065 12.1786L19.2495 9.82157L16.8925 12.1786L19.2495 14.5356ZM19.2495 14.5356L16.8925 16.8926L19.2495 19.2497L21.6065 16.8926L19.2495 14.5356Z" fill="#0F0F0F"/>
+          </svg>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+
+  </ul>
+
+</section>
+
+<div class="wrapper">
+  <section class="cta">
+    <div class="cta__content">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <path d="M8.00033 8H29.3337V13.3333H8.00033V45.3333H29.3337V13.3333H34.667V45.3333H56.0003V13.3333H34.667V8H61.3337V50.6667H34.667V56H29.3337V50.6667H2.66699V8H8.00033ZM50.667 26.6667H40.0003V32H50.667V26.6667ZM40.0003 18.6667H50.667V24H40.0003V18.6667ZM45.3337 34.6667H40.0003V40H45.3337V34.6667Z" fill="white"/>
+      </svg>
+      <h3 class="h2">What We’re Reading</h3>
+    </div>
+
+    <div class="cta__cta">
+      <a class="btn btn--white btn--center" href="">
+        <span>See our list</span>
+        <span>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M4.5 11.5V13.5H16.5V15.5H18.5V13.5H20.5V11.5H18.5V9.5H16.5V11.5H4.5ZM14.5 7.5H16.5V9.5H14.5V7.5ZM14.5 7.5H12.5V5.5H14.5V7.5ZM14.5 17.5H16.5V15.5H14.5V17.5ZM14.5 17.5H12.5V19.5H14.5V17.5Z" fill="white" />
+            </svg>
+          </span>
+      </a>
+
+      <svg class="cta__negative-left" viewBox="0 0 64 112">
+        <path d="M24,88h16c13.3,0,24-10.7,24-24v-16c0-13.3-10.7-24-24-24h-16C10.7,24,0,13.3,0,0v112c0-13.3,10.7-24,24-24Z" fill="#fff"/>
+        <path d="M326,21h-16c-13.3,0-24,10.7-24,24v16c0,13.3,10.7,24,24,24h16c13.3,0,24,10.7,24,24V-3c0,13.3-10.7,24-24,24Z" fill="#e08585"/>
+      </svg>
+      <svg class="cta__negative-right" viewBox="0 0 64 112">
+        <path d="M40,88h-16C10.7,88,0,77.3,0,64v-16c0-13.3,10.7-24,24-24h16c13.3,0,24-10.7,24-24v112c0-13.3-10.7-24-24-24Z" fill="#fff"/>
+        <path d="M326,21h-16c-13.3,0-24,10.7-24,24v16c0,13.3,10.7,24,24,24h16c13.3,0,24,10.7,24,24V-3c0,13.3-10.7,24-24,24Z" fill="#e08585"/>
+      </svg>
+
+      <svg class="cta__negative-top" viewBox="0 0 112 64">
+        <path d="M88,24v16c0,13.3-10.7,24-24,24h-16c-13.3,0-24-10.7-24-24v-16C24,10.7,13.3,0,0,0h112c-13.3,0-24,10.7-24,24Z" fill="#fff"/>
+        <path d="M350-3h-16c-13.3,0-24,10.7-24,24v16c0,13.3,10.7,24,24,24h16c13.3,0,24,10.7,24,24V-27c0,13.3-10.7,24-24,24Z" fill="#e08585"/>
+      </svg>
+
+      <svg class="cta__negative-bottom" viewBox="0 0 112 64">
+        <path d="M88,40v-16c0-13.3-10.7-24-24-24h-16c-13.3,0-24,10.7-24,24v16c0,13.3-10.7,24-24,24h112c-13.3,0-24-10.7-24-24Z" fill="#fff"/>
+        <path d="M350-3h-16c-13.3,0-24,10.7-24,24v16c0,13.3,10.7,24,24,24h16c13.3,0,24,10.7,24,24V-27c0,13.3-10.7,24-24,24Z" fill="#e08585"/>
+      </svg>
+    </div>
+
+
+  </section>
+
+</div>
+
+{% for team in site.data.team %}
+{% if team.bio %}
+{% assign slug = team.name | slugify %}
+
+<div class="modal-wrap" id="{{ slug }}">
+  <div class="modal">
+    <button class="modal__close" data-modal="{{ slug }}">
+      <svg width="20" height="20" viewBox="0 0 10 10">
+        <rect x="0" y="0" width="2" height="2" fill="black"/>
+        <rect x="8" y="0" width="2" height="2" fill="black"/>
+        <rect x="2" y="2" width="2" height="2" fill="black"/>
+        <rect x="6" y="2" width="2" height="2" fill="black"/>
+        <rect x="4" y="4" width="2" height="2" fill="black"/>
+        <rect x="2" y="6" width="2" height="2" fill="black"/>
+        <rect x="6" y="6" width="2" height="2" fill="black"/>
+        <rect x="0" y="8" width="2" height="2" fill="black"/>
+        <rect x="8" y="8" width="2" height="2" fill="black"/>
+      </svg>
+    </button>
+    <figure class="team-preview-image">
+      <img src="/assets/images/team/{{ team.img }}" alt="{{ team.name }}" />
+    </figure>
+    <h3 class="h3 mb-1">{{ team.name }}</h3>
+    <p class="team-preview__title">{{ team.title }}</p>
+
+    <p class="p text-gray mt-3">{{ team.bio }}</p>
+  </div>
+
+  <div class="modal__screen" data-modal="{{ slug }}"></div>
+</div>
+{% endif %}
+{% endfor %}

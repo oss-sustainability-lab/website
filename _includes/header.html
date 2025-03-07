@@ -1,0 +1,78 @@
+<header class="site-header">
+  <div class="site-header__inner wrapper-wide">
+    <a href="/" class="site-logo">
+      <img src="/assets/images/OSS-Sustainability-Lab.svg" />
+    </a>
+  </div>
+</header>
+
+<button class="burger js-menu-trigger">
+  <svg class="open" width="32" height="32" viewBox="0 0 32 32" fill="none">
+    <path d="M5.33337 8H26.6667V10.6667H5.33337V8ZM5.33337 14.6667H26.6667V17.3333H5.33337V14.6667ZM26.6667 21.3333H5.33337V24H26.6667V21.3333Z" fill="black"/>
+  </svg>
+
+  <svg  class="close" width="20" height="20" viewBox="0 0 10 10">
+    <rect x="0" y="0" width="2" height="2" fill="black"/>
+    <rect x="8" y="0" width="2" height="2" fill="black"/>
+    <rect x="2" y="2" width="2" height="2" fill="black"/>
+    <rect x="6" y="2" width="2" height="2" fill="black"/>
+    <rect x="4" y="4" width="2" height="2" fill="black"/>
+    <rect x="2" y="6" width="2" height="2" fill="black"/>
+    <rect x="6" y="6" width="2" height="2" fill="black"/>
+    <rect x="0" y="8" width="2" height="2" fill="black"/>
+    <rect x="8" y="8" width="2" height="2" fill="black"/>
+  </svg>
+</button>
+
+<nav class="navigation-drawer">
+  <div class="navigation-drawer__inner">
+    <div class="nav-buckets">
+      <div class="navigation-logo">
+        <a href="/">
+          <img src="/assets/images/OSS-Sustainability-Lab.svg" />
+        </a>
+      </div>
+
+      <ul class="main-nav">
+        <li {% if page.id == 'home' %}class="is-active"{% endif %}>
+          <a href="/">
+            <span>About</span>
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path d="M6.66667 18.8333V22.1666H26.6667V25.5H30V22.1666H33.3333V18.8333H30V15.5H26.6667V18.8333H6.66667ZM23.3333 12.1666H26.6667V15.5H23.3333V12.1666ZM23.3333 12.1666H20V8.83331H23.3333V12.1666ZM23.3333 28.8333H26.6667V25.5H23.3333V28.8333ZM23.3333 28.8333H20V32.1666H23.3333V28.8333Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+        <li {% if page.id == 'programs' %}class="is-active"{% endif %}>
+          <a href="/programs/">
+            <span>Programs</span>
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path d="M6.66667 18.8333V22.1666H26.6667V25.5H30V22.1666H33.3333V18.8333H30V15.5H26.6667V18.8333H6.66667ZM23.3333 12.1666H26.6667V15.5H23.3333V12.1666ZM23.3333 12.1666H20V8.83331H23.3333V12.1666ZM23.3333 28.8333H26.6667V25.5H23.3333V28.8333ZM23.3333 28.8333H20V32.1666H23.3333V28.8333Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+        <li {% if page.id == 'team' %}class="is-active"{% endif %}>
+          <a href="/team/">
+            <span>Team</span>
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path d="M6.66667 18.8333V22.1666H26.6667V25.5H30V22.1666H33.3333V18.8333H30V15.5H26.6667V18.8333H6.66667ZM23.3333 12.1666H26.6667V15.5H23.3333V12.1666ZM23.3333 12.1666H20V8.83331H23.3333V12.1666ZM23.3333 28.8333H26.6667V25.5H23.3333V28.8333ZM23.3333 28.8333H20V32.1666H23.3333V28.8333Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </li>
+
+        <li {% if page.id == 'contact' %}class="is-active"{% endif %}>
+        <a href="/contact/">
+          <span>Contact</span>
+          <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+            <path d="M6.66667 18.8333V22.1666H26.6667V25.5H30V22.1666H33.3333V18.8333H30V15.5H26.6667V18.8333H6.66667ZM23.3333 12.1666H26.6667V15.5H23.3333V12.1666ZM23.3333 12.1666H20V8.83331H23.3333V12.1666ZM23.3333 28.8333H26.6667V25.5H23.3333V28.8333ZM23.3333 28.8333H20V32.1666H23.3333V28.8333Z" fill="currentColor"/>
+          </svg>
+        </a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="nav-after">
+
+    </div>
+  </div>
+</nav>
+<div class="nav-screen"></div>

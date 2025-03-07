@@ -1,0 +1,112 @@
+// ---------------------------------------------------------------------
+//  Header CSS
+// ---------------------------------------------------------------------
+
+$header-height: 80px;
+
+.site-header {
+  display: block;
+  z-index: 10;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: $white;
+  border-bottom: 1px solid $black;
+
+  @include start-at($header-breakpoint) {
+    display: none;
+  }
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  grid-gap: 28px;
+}
+
+.site-logo {
+  display: block;
+  width: 170px;
+
+
+
+  img {
+    width: 100%
+  }
+}
+
+// ----------------------------------------
+// Nav
+// ----------------------------------------
+
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  right: calc(5vw - 10px);
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  transform-origin: center;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background: transparent;
+  //background: $white;
+  color: $black;
+  z-index: 12;
+  transition: all $trans;
+
+  //@include start-at($header-breakpoint) {
+  //  top: 20px;
+  //}
+
+  .close {
+    opacity: 0;
+  }
+
+  //@include start-at($header-breakpoint) {
+  //  display: none;
+  //}
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    color: $black;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    //width: 32px;
+    fill: currentColor;
+    transform-origin: center;
+    transition: opacity 0.1s ease;
+
+    //&.close {
+    //  width: 32px;
+    //}
+  }
+}
+
+.menu-is-open .burger {
+  color: $black;
+  transform: scale(1.05);
+
+  .close {
+    opacity: 1;
+  }
+  .open {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,38 @@
+<svg width="353" height="614" viewBox="0 0 353 614" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<mask id="path-1-inside-1_37_26" fill="white">
+<path d="M0.5 1H351.5V614H0.5V1Z"/>
+</mask>
+<path d="M351.5 613H0.5V615H351.5V613Z" fill="#CFCFCF" mask="url(#path-1-inside-1_37_26)"/>
+<g clip-path="url(#clip0_37_26)">
+<line x1="0.5" y1="40.7084" x2="353.5" y2="40.7084" stroke="#CFCFCF"/>
+<line x1="0.5" y1="81.0654" x2="353.5" y2="81.0654" stroke="#CFCFCF"/>
+<line x1="0.5" y1="121.423" x2="353.5" y2="121.423" stroke="#CFCFCF"/>
+<line x1="0.5" y1="161.78" x2="353.5" y2="161.78" stroke="#CFCFCF"/>
+<line x1="0.5" y1="202.137" x2="353.5" y2="202.137" stroke="#CFCFCF"/>
+<line x1="0.5" y1="242.494" x2="353.5" y2="242.494" stroke="#CFCFCF"/>
+<line x1="0.5" y1="282.851" x2="353.5" y2="282.851" stroke="#CFCFCF"/>
+<line x1="0.5" y1="323.208" x2="353.5" y2="323.208" stroke="#CFCFCF"/>
+<line x1="0.5" y1="363.565" x2="353.5" y2="363.565" stroke="#CFCFCF"/>
+<line x1="0.5" y1="403.923" x2="353.5" y2="403.923" stroke="#CFCFCF"/>
+<line x1="0.5" y1="444.28" x2="353.5" y2="444.28" stroke="#CFCFCF"/>
+<line x1="0.5" y1="484.637" x2="353.5" y2="484.637" stroke="#CFCFCF"/>
+<line x1="0.5" y1="524.994" x2="353.5" y2="524.994" stroke="#CFCFCF"/>
+<line x1="0.5" y1="565.351" x2="353.5" y2="565.351" stroke="#CFCFCF"/>
+</g>
+<line x1="1.00003" y1="1" x2="1.00001" y2="565.851" stroke="#CFCFCF"/>
+<line x1="40.2222" y1="1" x2="40.2222" y2="565.851" stroke="#CFCFCF"/>
+<line x1="79.4445" y1="1" x2="79.4444" y2="565.851" stroke="#CFCFCF"/>
+<line x1="118.667" y1="1" x2="118.667" y2="565.851" stroke="#CFCFCF"/>
+<line x1="157.889" y1="1" x2="157.889" y2="565.851" stroke="#CFCFCF"/>
+<line x1="197.111" y1="1" x2="197.111" y2="565.851" stroke="#CFCFCF"/>
+<line x1="236.333" y1="1" x2="236.333" y2="565.851" stroke="#CFCFCF"/>
+<line x1="275.556" y1="1" x2="275.556" y2="565.851" stroke="#CFCFCF"/>
+<line x1="314.778" y1="1" x2="314.778" y2="565.851" stroke="#CFCFCF"/>
+</g>
+<defs>
+<clipPath id="clip0_37_26">
+<rect width="353" height="565" fill="white" transform="translate(0.5 0.851196)"/>
+</clipPath>
+</defs>
+</svg>

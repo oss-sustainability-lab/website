@@ -1,0 +1,105 @@
+
+
+.cta {
+  background: $black;
+  color: $white;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 24px 0;
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+
+  @include start-at($medium) {
+
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cta__content {
+  padding: 48px 24px;
+
+  .h2 {
+    font-family: $mono;
+
+    @include start-at($large) {
+      font-size: 40px;
+    }
+  }
+
+  svg, img {
+    margin: 0 auto 12px
+  }
+
+  @include start-at($medium) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 64px 48px;
+    text-align: left;
+
+
+    svg, img {
+      margin: 0 16px 0 0;
+    }
+  }
+}
+
+.cta__cta {
+  position: relative;
+  padding: 132px 24px 48px;
+  margin-top: -60px;
+
+  @include start-at($medium) {
+    padding: 64px 48px 64px 64px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.cta__negative-left,
+.cta__negative-right {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 64px;
+  height: auto;
+
+  @include start-at($medium) {
+    display: none;
+  }
+}
+.cta__negative-right {
+  right: 0px;
+}
+.cta__negative-left {
+  left: -1px;
+}
+
+.cta__negative-top,
+.cta__negative-bottom {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  width: 112px;
+  height: auto;
+  transform: translate3d(-50%, 0, 0);
+
+  @include stop-at($medium) {
+    display: none;
+  }
+}
+.cta__negative-top {
+  top: 0;
+}
+.cta__negative-bottom {
+  bottom: 0;
+}
+

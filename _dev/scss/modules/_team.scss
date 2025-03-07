@@ -1,0 +1,109 @@
+// ---------------------------------------------------------------------
+//
+// ---------------------------------------------------------------------
+
+.team-list {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 24px;
+  column-gap: 18px;
+
+  @include start-at($large) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 24px;
+    column-gap: 48px;
+  }
+}
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.team-preview  {
+  width: 100%;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 16px;
+
+    svg {
+      min-width: 20px;
+    }
+  }
+
+  .h4 {
+    margin: 0 0 4px;
+  }
+
+  .team-preview__open {
+
+  }
+
+  &:hover {
+    //cursor: pointer;
+
+    .team-preview__open {
+      transform: translate3d(3px, -3px, 0);
+    }
+  }
+}
+
+[data-modal]:hover {
+  cursor: pointer;
+}
+
+.team-preview__title {
+  font-family: $mono;
+  color: $gray-text;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+  font-weight: 500;
+}
+
+.team-list {
+  @include stop-at($medium) {
+    .team-preview__title {
+      font-size: 12px;
+    }
+    .h4 {
+      font-size: 16px;
+    }
+  }
+
+}
+
+.team-preview-image {
+  width: 100%;
+  aspect-ratio: 314/290;
+  position: relative;
+  margin-bottom: 18px;
+
+  mask-image: url('./images/team-mask.svg');
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-clip: border-box;
+
+  img {
+    object-fit: cover;
+    width: 101%;
+    height: 101%;
+    position: absolute;
+
+  }
+}
+
+.modal {
+  .team-preview-image {
+    max-width: 314px;
+  }
+
+  p {
+    max-width: 800px;
+  }
+}

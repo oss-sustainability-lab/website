@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.title }} | {{ page.title }}</title>
+
+
+  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicons/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png" />
+  <link rel="icon" href="/assets/images/favicons/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/style.css?ver=1.0.3" media="all" />
+  <script src="/assets/js/jquery.js"></script>
+</head>
+
+<body class="template-{{ page.id }}">
+<a href="#content" class="sr-only">Skip to content</a>
+
+{% include header.html %}
+
+<main id="content" aria-label="Content" role="main">
+  <div id="page">
+    {{ content }}
+  </div>
+</main>
+
+{% include footer.html %}
+
+<script src="/assets/js/swiper-bundle.min.js"></script>
+<script src="/assets/main.js"></script>
+
+
+<script>
+
+setTimeout(function(){
+var swiper = new Swiper("#swiper-programs", {
+  loop: true,
+  speed: 600,
+  //speed: 400,
+  //effect: 'fade',
+  autoplay: {
+    delay: 6500,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  slidesPerView: 1,
+  //navigation: {
+  //  nextEl: "#<?php //echo $id; ?>// .swiper-next",
+  //  prevEl: "#<?php //echo $id; ?>// .swiper-prev",
+  //},
+});
+},100);
+
+</script>
+
+</body>
+</html>

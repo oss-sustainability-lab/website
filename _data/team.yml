@@ -1,0 +1,39 @@
+- name: Matt Germonprez
+  title: Partnerships coordinator
+  img: matt-germonprez.png
+  bio: |
+    Matt Germonprez is the Mutual of Omaha Distinguished Chair of Information Science & Technology and Professor of Information Systems and Quantitative Analysis in the College of Information Science & Technology at the University of Nebraska Omaha. He uses qualitative field-studies to research organizational engagement with open communities and the dynamics of work found in these engagements. His lines of research have been funded by numerous organizations including the Alfred P. Sloan Foundation, the Ford Foundation, the National Science Foundation, the Chan Zuckerberg Initiative, and Mozilla. Matt is the co-founder of the Linux Foundation Community Health Analytics OSS Project (CHAOSS). He has had work accepted at ISR, MISQ, JAIS, JIT, ISJ, I&O, CSCW, OpenSym, Group, HICSS, IEEE Computer, and ACM Interactions. Matt is an active open source community member, having presented design and development work at LinuxCon, the Open Source Summit NA, the Linux Foundation Open Compliance Summit, the Linux Foundation Collaboration Summit, and the Open Source Member Summit.
+
+- name: Dr. Dawn Foster
+  title: Manager
+  img: dawn.jpg
+  bio: Dr. Dawn Foster works as the Director of Data Science for CHAOSS where she is also a board member / maintainer. She is co-chair of CNCF TAG Contributor Strategy and an OpenUK board member. She has 20+ years of experience at companies like VMware and Intel with expertise in community, strategy, governance, metrics, and more. She has spoken at over 100 industry events and has a BS in computer science, an MBA, and a PhD. In her spare time she enjoys reading science fiction, running, and traveling.
+
+
+- name: Sean Goggins
+  title: Metrics lead
+  img: sean.jpeg.webp
+  bio: Sean Goggins is a Professor of Electrical Engineering and Computer Science at the University of Missouri. His research foci are open-source software, serious game analytics, and human-centered data science. Sean is a founding member of the Linux Foundation’s working group on community health analytics for open-source software (CHAOSS). His work is funded by the National Science Foundation, the Sloan Foundation, the Ford Foundation, Mozilla, the US Department of Education, Red Hat Software, and the US Navy’s Office of Naval Research. Sean also created the Data Science and Analytics Masters program at Missouri. Sean’s publications focus on understanding how social technologies influence organizational, small group, and community dynamics, typically including analysis of electronic trace data from systems combined with the perspectives of people whose behavior is traced. He lives in Columbia, MO, with his wife Kate, two daughters (a third, the oldest, is off getting her Ph.D.), and a dog named Huckleberry.
+
+- name: Rayya El Zein, PhD
+  title: Facilitator
+  img: rayya.jpg
+  bio: |
+    Rayya El Zein brings a global, justice-centered perspective to philanthropy, public policy, and community-led institution building. She works with technologists, artists, and researchers to imagine and build equitable infrastructures to support their work. You can read more about her and the projects she’s involved in at <a href="https://rayyaelzein.com/" target="_blank">rayyaelzein.com</a>.
+
+
+- name: Elizabeth Barron
+  title: Resource lead
+  img: elizabeth-barron.jpg
+  bio: Elizabeth Barron is a long time open source contributor and advocate with over 20 years experience at companies like GitHub, Pivotal/VMWare, and Sourceforge. She currently works as an independent open source consultant on projects such as CHAOSS and the GitHub All In Project. Elizabeth is currently working toward her MBA, and is a published author, public speaker, event organizer, and award winning nature photographer. She lives in Cincinnati, Ohio.
+
+- name: Kingsley Mkpandiok
+  title: Product & Brand Design
+  img: Kingsley-Mkpandiok.jpg
+  bio: Kingsley is a Brand Identity and Product Designer who has contributed to impactful open-source projects including GOVSTACK, GitHub, and Ethereum Foundation. He is also a design maintainer at CHAOSS. Beyond his day-to-day design work, he actively advocates for non-technical contributors in open source. Kingsley is based in Lagos, Nigeria.
+
+- name: Kyle Meehan
+  title: Design
+  img: kyle-meehan.webp
+  bio: Kyle Meehan is a designer and has worked on several open source projects with organizations including GitHub, Microsoft, MERL Center, and more. He is also the founder of Andless, a brand design and digital product studio. He believes we can do more, with less, and that the simple always wins. He resides in Minnesota with his wife and three kids.
+

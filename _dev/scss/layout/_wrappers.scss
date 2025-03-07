@@ -1,0 +1,24 @@
+// ---------------------------------------------------------------------
+//  Wrapper Styles (Horizontal Spacing)
+// ---------------------------------------------------------------------
+
+.wrapper {
+  @include wrapper;
+}
+
+.wrapper-wide {
+  @include wrapper;
+  max-width: $wide-content;
+}
+
+.wrapper-thin {
+  @include wrapper;
+  max-width: $width-narrow;
+}
+
+.wrapper-x-thin {
+  max-width: $width-narrow;
+}
+.wrapper-thin-alt {
+  max-width: $width-narrow;
+}

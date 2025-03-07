@@ -1,0 +1,162 @@
+// ---------------------------------------------------------------------
+//
+// ---------------------------------------------------------------------
+
+// ---------------------------------------------------------------------
+// Visibility
+// ---------------------------------------------------------------------
+
+// $xxlarge: 1800px;
+// $xlarge: 1280px;
+// $large: 1012px;
+// $medium: 782px;
+// $small: 544px;
+
+// Breakpoint widths
+$width-xs: 400px;
+$width-sm: 544px;
+$width-md: 782px;
+$width-lg: 1012px;
+$width-xl: 1280px;
+$width-xxl: 1800px;
+
+// // Responsive container widths
+// $container-md: $width-md !default;
+// $container-lg: $width-lg !default;
+// $container-xl: $width-xl !default;
+
+// Breakpoints
+$breakpoints: (
+  // Small screen / phone
+  sm: $small,
+  // Medium screen / tablet
+  md: $medium,
+  // Large screen / desktop (980 + (16 * 2)) <= container + gutters
+  lg: $large,
+  // Extra large screen / wide desktop
+  xl: $xlarge
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == "" {
+    @content;
+  }
+
+  @else {
+    // Retrieves the value from the key
+    $value: map-get($breakpoints, $breakpoint);
+
+    // If the key exists in the map
+    @if $value != null {
+      // Prints a media query based on the value
+      @media (min-width: $value) {
+        @content;
+      }
+    }
+
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+    }
+  }
+}
+
+$responsive-variants: ("": "");
+@each $key in map-keys($breakpoints) {
+  $responsive-variants: map-merge($responsive-variants, ($key: "-#{$key}"));
+}
+
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+$display-values: (
+  block,
+  flex,
+  inline,
+  inline-block,
+  inline-flex,
+  none,
+  table,
+  table-cell
+);
+
+// Responsive display utilities
+@each $breakpoint, $variant in $responsive-variants {
+  @include breakpoint($breakpoint) {
+    @each $display in $display-values {
+      .d#{$variant}-#{$display} { display: $display !important; }
+    }
+  }
+}
+
+.v-hidden { visibility: hidden !important; }
+.v-visible { visibility: visible !important; }
+
+
+@media (max-width: $small) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: $small) and (max-width: $medium) {
+  .hide-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: $medium) and (max-width: $large) {
+  .hide-lg {
+    display: none !important;
+  }
+}
+
+@media (min-width: $large) {
+  .hide-xl {
+    display: none !important;
+  }
+}
+
+/* Set the table-layout to fixed */
+.table-fixed { table-layout: fixed !important; }
+
+// Only display content to screen readers
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  // Workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=1241631
+  word-wrap: normal;
+  border: 0;
+}
+
+// Only display content on focus
+.show-on-focus {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+
+  &:focus {
+    z-index: 20;
+    width: auto;
+    height: auto;
+    clip: auto;
+  }
+}
+
+@include start-at($medium) {
+  .d-md-none {
+    display: none !important;
+  }
+}

@@ -1,0 +1,97 @@
+// ---------------------------------------------------------------------
+//  SCSS Settings
+// ---------------------------------------------------------------------
+
+
+// ----------------------------------------
+// Fonts
+// ----------------------------------------
+
+// 300, 400, 500, 600
+$sans-serif: "Geist", sans-serif;
+$ss: $sans-serif;
+
+$mono: 'Geist Mono', monospace;
+
+
+
+// ----------------------------------------
+// Font Size/ Line Height
+// ----------------------------------------
+$main-font: $ss;
+$base-font-size: 13px;
+$base-line-height: 1.5;
+
+
+// ----------------------------------------
+// Colors
+// ----------------------------------------
+
+
+$black: #0F0F0F;
+$white: #ffffff;
+
+$gray: #9F9F9F;
+$gray-light: #CFCFCF;
+
+$gray-text: #6F6F6F;
+
+$blue: #0FF;
+$green: #0F0;
+$pink: #FFC0CB;
+
+$border-color: #CFCFCF;
+$border: #CFCFCF;
+
+$red: #FF0017;
+$error: $red;
+
+//$gradient: linear-gradient(90deg, $blue 0%, $purple 85%);
+
+
+
+// ----------------------------------------
+// Breakpoints
+// ----------------------------------------
+
+$xxlarge: 1800px;
+$xlarge: 1344px;
+$large: 1012px;
+$medium: 782px;
+$small: 544px;
+
+$content-width: 1344px;
+$wide-content: 1680px;
+$width-narrow: 880px;
+
+$content-narrow: 648px;
+
+@mixin start-at($device-width) {
+  @media (min-width: $device-width) {
+    @content;
+  }
+}
+
+@mixin stop-at($device-width) {
+  @media (max-width: $device-width - 1) {
+    @content;
+  }
+}
+
+
+// ----------------------------------------
+// Global Variables
+// ----------------------------------------
+
+
+$header-breakpoint: 600px;
+
+$transition-speed: 0.3s;
+$transition: $transition-speed ease-in-out;
+// cuz I no type good
+$trans: $transition;
+
+$wrapper-percentage: 90%;
+$wrapper-width: $content-width;
+//$wrapper-padding: (100% - $wrapper-percentage) / 2;
+$wrapper-padding: calc((100% - $wrapper-percentage) / 2);

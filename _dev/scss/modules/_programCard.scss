@@ -1,0 +1,200 @@
+// ---------------------------------------------------------------------
+//
+// ---------------------------------------------------------------------
+
+.program-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  //padding: 32px;
+  margin: 12px;
+  text-align: center;
+
+  @include stop-at($medium) {
+    background: transparent !important;
+  }
+
+  @include start-at($medium) {
+    padding: 48px;
+    margin: 24px;
+    text-align: left;
+    background: #CFCFCF;
+    color: $black;
+  }
+}
+
+.program-card-desktop {
+  display: none;
+
+  @include start-at($medium) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.program-card[data-current-program='synchronous'],
+.card--light {
+  background: #CFCFCF;
+}
+.program-card[data-current-program='workshop'],
+.card--medium {
+  background: #9F9F9F;
+}
+.program-card[data-current-program='resources'],
+.card--dark {
+  background: #6F6F6F;
+}
+
+.program-card__tabs {
+
+  button {
+    display: inline-flex;
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: .4;
+    text-align: left;
+    
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.is-active {
+      opacity: 1;
+    }
+  }
+
+
+  @include start-at($medium) {
+    width: 60%;
+
+    .btn {
+      margin-top: 150px;
+    }
+  }
+}
+
+
+.program-card__icon {
+
+  figure {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+
+
+  svg {
+    width: 100%;
+  }
+
+  @include start-at($medium) {
+    width: 40%;
+  }
+}
+
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.program-card-mobile {
+  display: block;
+
+  .subheading {
+    position: absolute;
+    top: 32px;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  @include start-at($medium) {
+    display: none;
+  }
+}
+
+.program-card-sm {
+  text-align: center;
+  padding: 80px 32px 32px;
+  border-radius: 16px;
+
+  > figure {
+    margin: 12px auto 24px;
+    aspect-ratio: 240/200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      //object-fit: contain;
+      margin: 0 auto;
+    }
+  }
+}
+
+.swiper-pagination--programs {
+  @include start-at($medium) {
+    display: none !important;
+  }
+}
+
+
+.program-card-sm {
+
+  @include start-at($medium) {
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 460px;
+
+    div {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        flex-grow: 1;
+      }
+    }
+
+    p {
+      margin-top: 100px;
+      color: #3F3F3F;
+    }
+
+    &.card--dark {
+      p {
+        color: #000000;
+      }
+    }
+
+    figure {
+      width: 40%;
+      aspect-ratio: unset;
+      justify-content: flex-end;
+
+      img {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.program-card-list {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.program-card-list .program-card-sm {
+  margin: 12px;
+
+  @include start-at($medium) {
+    margin: 24px;
+  }
+}

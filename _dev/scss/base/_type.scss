@@ -1,0 +1,447 @@
+// ---------------------------------------------------------------------
+//  Typography Styles
+// ---------------------------------------------------------------------
+
+// ----------------------------------------
+// Headings
+// ----------------------------------------
+
+@mixin heading1 {
+  display: block;
+  font-family: $mono;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.8px;
+  margin-bottom: 18px;
+
+  @include start-at($medium) {
+    font-size: 56px;
+  }
+
+  @include start-at($large) {
+    font-size: 56px;
+    letter-spacing: -1.76px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.h1,
+h1,
+.h0 {
+  @include heading1;
+}
+
+.h0 {
+  font-family: $sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  letter-spacing: -1.76px;
+
+  @include start-at($medium) {
+    font-size: 64px;
+    letter-spacing: -1.76px;
+  }
+
+  @include start-at($large) {
+    font-size: 88px;
+    letter-spacing: -1.76px;
+  }
+}
+
+
+@mixin heading2 {
+  display: block;
+  font-family: $ss;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.84px;
+  margin-bottom: 16px;
+  font-size: 36px;
+
+  @include start-at($medium) {
+    font-size: 48px;
+    letter-spacing: -1.44px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.h2,
+h2 {
+  @include heading2;
+}
+
+
+@mixin heading3 {
+  display: block;
+  font-family: $ss;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.64px;
+  margin-bottom: 16px;
+  font-size: 28px;
+
+  @include start-at($medium) {
+    font-size: 32px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.h3,
+h3 {
+  @include heading3;
+}
+
+
+@mixin heading4 {
+  display: block;
+  font-family: $ss;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+
+  @include start-at($medium) {
+    font-size: 24px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.h4,
+h4 {
+  @include heading4;
+}
+
+@mixin heading5 {
+  display: block;
+  font-family: $ss;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+
+  @include start-at($medium) {
+    font-size: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.h5,
+h5,
+.h6,
+h6 {
+  @include heading5;
+}
+
+@mixin subheading {
+  font-family: $mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.36px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.h6,
+h6,
+.subheading {
+  @include subheading;
+}
+
+
+// ----------------------------------------
+// Body copy
+// ----------------------------------------
+
+p,
+.p,
+.para {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  + p {
+    margin-top: 18px;
+  }
+}
+
+p.p-lg,
+.rte--lg p {
+  font-size: 16px;
+
+  @include start-at($medium) {
+    font-size: 18px;
+  }
+}
+
+
+p.p-xlg,
+.rte--xlg p {
+  font-size: 18px;
+
+  @include start-at($medium) {
+    font-size: 22px;
+  }
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+small,
+.p-sm {
+  display: block;
+  font-size: 12px;
+}
+
+
+
+// ----------------------------------------
+// .rte
+// ----------------------------------------
+
+
+.rte {
+
+  h1, h2 {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h4, h3 {
+    margin-bottom: 8px;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  ol, ul {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    list-style-position: outside;
+    padding-left: 20px;
+
+    @include start-at($large) {
+      padding-left: 32px;
+    }
+
+    &.is-text-heavy {
+      grid-gap: 12px;
+    }
+
+    .text-center & {
+      max-width: 680px;
+      margin: 24px auto;
+      list-style-position: inside;
+    }
+
+    + h1,
+    + h2,
+    + h3,
+    + h4 {
+      margin-top: 24px;
+    }
+  }
+
+  p + p {
+    margin-top: 13px;
+  }
+}
+
+.rte--interior {
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+
+    @include start-at($medium) {
+      font-size: 56px;
+    }
+  }
+  h2,
+  .h2 {
+    font-size: 24px;
+
+    @include start-at($medium) {
+      font-size: 28px;
+    }
+  }
+  h3,
+  .h3 {
+    font-size: 20px;
+
+    @include start-at($medium) {
+      font-size: 24px;
+    }
+  }
+  h4,
+  .h4 {
+    font-weight: 600;
+    font-size: 18px;
+
+    @include start-at($medium) {
+      font-size: 20px;
+    }
+  }
+}
+
+.rte.rte--list-flush {
+  ol, ul {
+    padding-left: 8px;
+    list-style-position: inside;
+  }
+}
+
+.rte--lg {
+
+  @include start-at($medium) {
+    font-size: 18px;
+
+    p, ul, ol, blockquote {
+      font-size: 18px !important;
+    }
+  }
+}
+
+
+.underline-blue,
+.underline-green,
+.underline-pink {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: $blue;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1.2;
+  vertical-align: bottom;
+
+  text-decoration: none;
+
+  &:after {
+    content: "_____________________________";
+    color: transparent;
+    position: absolute;
+    right: 0;
+    width: 400%;
+    height: 6px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: $blue;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+    z-index: -1;
+    transform: translateX(0,0,0);
+  }
+
+  &:hover {
+    &:after {
+      animation: wave-move 20s infinite linear;
+    }
+  }
+
+  @include start-at($large) {
+    text-decoration-thickness: 5px;
+    text-underline-offset: 8px;
+  }
+}
+
+@keyframes wave-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); } /* Moves the waves left */
+}
+
+.underline-green:after {
+  text-decoration-color: $green;
+}
+
+.underline-pink:after {
+  text-decoration-color: $pink;
+}
+
+.text-gray {
+  color: $gray-text;
+}
+
+
+
+// ----------------------------------------
+// Vertical Spacing
+// ----------------------------------------
+
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+
+//
+//.text-gradient {
+//  background: $gradient;
+//  -webkit-background-clip: text;
+//  -webkit-text-fill-color: transparent;
+//  background-clip: text;
+//  text-fill-color: transparent;
+//}
+//
+//
+//.text-gradient-animate {
+//  background: linear-gradient(
+//      to right,
+//      #066AFE 20%,
+//      #00affa 30%,
+//      #0190cd 70%,
+//      #623CEA 80%
+//  );
+//  -webkit-background-clip: text;
+//  background-clip: text;
+//  -webkit-text-fill-color: transparent;
+//  text-fill-color: transparent;
+//  background-size: 500% auto;
+//  animation: textShine 5s ease-in-out infinite alternate;
+//}
+//
+//@keyframes textShine {
+//  0% {
+//    background-position: 0% 50%;
+//  }
+//  100% {
+//    background-position: 100% 50%;
+//  }
+//}
+

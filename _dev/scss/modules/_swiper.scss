@@ -1,0 +1,186 @@
+// ---------------------------------------------------------------------
+//  SCSS Settings
+// ---------------------------------------------------------------------
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.is-root-container .swiper figure {
+  margin-bottom: 0 !important;
+}
+
+// ----------------------------------------
+// Swiper single
+// ----------------------------------------
+
+.swiper--full {
+  padding: 0;
+  position: relative;
+
+  .swiper-slide__inner figure {
+    width: 100%;
+    min-height: 0;
+    height: 95vh;
+    height: 95dvh;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 65%;
+
+    @include start-at($large) {
+      padding-bottom: 56%;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+}
+
+// ----------------------------------------
+// Vertical
+// ----------------------------------------
+
+.swiper--vertical {
+
+  .swiper-pagination,
+  .swiper-pagination-horizontal {
+    z-index: 10;
+    position: absolute;
+    top: auto;
+    bottom: 124px;
+    left: auto;
+    right: 24px;
+    display: block;
+    width: 24px;
+
+    .swiper-pagination-bullet {
+      border-radius: 4px;
+      height: 4px;
+      width: 22px;
+      border: 1px solid $white;
+      background: transparent;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+      display: block !important;
+      margin: 10px auto !important;
+      box-shadow: 0 0 3px rgba($black, 0.2);
+
+    }
+    .swiper-pagination-bullet-active {
+      height: 24px;
+      border-radius: 4px;
+      background: $white;
+    }
+  }
+}
+
+.swiper-pagination.swiper-pagination-horizontal {
+  position: relative;
+  bottom: unset;
+  top: unset;
+  left: unset;
+  right: unset;
+  padding: 12px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 8px;
+
+  .swiper-pagination-bullet {
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    border: 2px solid $black;
+    background: transparent;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    display: block !important;
+    margin: 0 !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: $black;
+  }
+}
+
+
+
+
+// ----------------------------------------
+// Swiper single
+// ----------------------------------------
+
+.swiper-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 24px;
+}
+
+.swiper-prev,
+.swiper-next {
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  z-index: 2;
+  background: rgba(#D0C9B7, .8);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity $trans;
+
+  svg {
+    //fill: $white;
+    margin: 0;
+    height: 20px;
+    width: auto;
+  }
+
+  span {
+    @include visually-hidden;
+  }
+
+  // @include start-at($large) {
+  //   width: 56px;
+  //   height: 56px;
+  // }
+
+  &:hover {
+    opacity: .9;
+    cursor: pointer;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+.swiper-prev {
+  left: 12px;
+}
+.swiper-next {
+  right: 12px;
+}
+
+// @include start-at($large) {
+//   &:hover {
+//     .swiper-prev,
+//     .swiper-next {
+//       opacity: .8;
+//
+//       &:hover {
+//         opacity: 1;
+//       }
+//     }
+//   }
+// }
