@@ -7,16 +7,16 @@
   <title>{{ site.title }} | {{ page.title }}</title>
 
 
-  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicons/favicon.png" />
-  <link rel="apple-touch-icon" href="/assets/images/favicons/apple-touch-icon.png" />
-  <link rel="icon" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicons/favicon.png" />
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/favicons/apple-touch-icon.png" />
+  <link rel="icon" href="{{ site.baseurl }}/assets/images/favicons/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/style.css?ver=1.0.3" media="all" />
-  <script src="/assets/js/jquery.js"></script>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css?ver=1.0.3" media="all" />
+  <script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
 </head>
 
 <body class="template-{{ page.id }}">
@@ -32,10 +32,11 @@
 
 {% include footer.html %}
 
-<script src="/assets/js/swiper-bundle.min.js"></script>
-<script src="/assets/main.js"></script>
+<script src="{{ site.baseurl }}/assets/js/swiper-bundle.min.js"></script>
+<script src="{{ site.baseurl }}/assets/main.js"></script>
 
 
+{% if page.id == 'home' %}
 <script>
 
 setTimeout(function(){
@@ -52,14 +53,10 @@ var swiper = new Swiper("#swiper-programs", {
     clickable: true,
   },
   slidesPerView: 1,
-  //navigation: {
-  //  nextEl: "#<?php //echo $id; ?>// .swiper-next",
-  //  prevEl: "#<?php //echo $id; ?>// .swiper-prev",
-  //},
 });
 },100);
 
 </script>
-
+{% endif %}
 </body>
 </html>

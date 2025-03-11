@@ -27,7 +27,7 @@ permalink: /team/
 <div class="wrapper-thin py-6 py-lg-8 text-center">
   <p class="h2">The OSS Sustainability Lab is an independent, grant-funded project, supported by the Wellcome trust. </p>
 
-  <img class="mt-4" src="/assets/images/wellcome-logo-black.png" alt="Wellcome" />
+  <img class="mt-4" src="{{ site.baseurl }}/assets/images/wellcome-logo-black.png" alt="Wellcome" />
 </div>
 
 <hr />
@@ -45,7 +45,7 @@ permalink: /team/
 
       <article class="team-preview"{% if team.bio %} data-modal="{{ slug }}{% endif %}">
         <figure class="team-preview-image">
-          <img src="/assets/images/team/{{ team.img }}" alt="{{ team.name }}" />
+          <img src="{{ site.baseurl }}/assets/images/team/{{ team.img }}" alt="{{ team.name }}" />
         </figure>
         <div>
             <span>
@@ -66,7 +66,7 @@ permalink: /team/
 
 </section>
 
-<div class="wrapper">
+<div class="wrapper d-none">
   <section class="cta">
     <div class="cta__content">
       <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -130,7 +130,7 @@ permalink: /team/
       </svg>
     </button>
     <figure class="team-preview-image">
-      <img src="/assets/images/team/{{ team.img }}" alt="{{ team.name }}" />
+      <img src="{{ site.baseurl }}/assets/images/team/{{ team.img }}" alt="{{ team.name }}" />
     </figure>
     <h3 class="h3 mb-1">{{ team.name }}</h3>
     <p class="team-preview__title">{{ team.title }}</p>
