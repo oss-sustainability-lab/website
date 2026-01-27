@@ -1,0 +1,61 @@
+- section: Visioning
+  title: Visioning
+  description: The visioning chapter grounds the OSS Lab curriculum in a unique approach to sustainability, grounded in taking stock of relationships, the framework of abolition, and the connection of both to our individual and institutional capacities for change. The two modules feature lighting talks by Miliaku Nwabueze and Camille Acey and explore different approaches to these ideas. The talks are accompanied by exercises and activities as well as suggested readings.
+  highlightedResources:
+    - title: The Abolitionist Horizon
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      author: Miliaku Nwabueze
+      slug: the-abolitionist-horizon
+  resources:
+    - title: Abolition as Sustainability
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      author: Miliaku Nwabueze
+      slug: abolition-as-sustainability
+    - title: Sunsetting
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      author: Camille Acey
+      slug: sunsetting
+
+- section: Health Organizations
+  title: Health Organizations
+  description: This section explores how to build and maintain healthy organizational structures within open source projects. Learn about governance models, decision-making processes, and creating sustainable organizational practices that support long-term project viability.
+  highlightedResources: []
+  resources:
+    - title: Governance
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      author: OSS LAB
+      slug: governance
+
+- section: Revenue
+  title: Revenue
+  description: Understanding how to generate and manage revenue is crucial for project sustainability. This module covers various funding models, membership structures, and strategies for financial sustainability in open source projects.
+  highlightedResources: []
+  resources:
+    - title: Fundraising in the Open
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      author: Emma Irwin
+      slug: fundraising-in-the-open
+    - title: Membership Models
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      author: Michelle Barker
+      slug: membership-models
+
+- section: Healthy Communities
+  title: Healthy Communities
+  description: Building and nurturing healthy communities is essential for open source project success. This section focuses on community design, engagement strategies, and creating inclusive spaces that foster collaboration and growth.
+  highlightedResources: []
+  resources:
+    - title: Design
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      author: Eriol Fox
+      slug: design
+
+- section: Metrics
+  title: Metrics
+  description: Measuring what matters helps projects understand their health and make data-driven decisions. This module explores dashboards, metrics, and analytics tools that can help you track project sustainability and community health.
+  highlightedResources: []
+  resources:
+    - title: Dashboards and more
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      author: OSS LAB
+      slug: dashboards-and-more

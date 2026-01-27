@@ -30,6 +30,29 @@
   }
 }
 
+.hero__content__bottom {
+  position: relative;
+  z-index: 2;
+  margin-top: 24px;
+
+
+  @include start-at($small) {
+    max-width: 80%;
+  }
+
+  @include start-at($large) {
+    max-width: 850px;
+  }
+
+  .h1,
+  h1 {
+
+    @include start-at($xlarge) {
+      font-size: 64px !important;
+    }
+  }
+}
+
 .hero__subtract {
   position: absolute;
   top: -1px;
@@ -42,9 +65,15 @@
   }
 
   @include start-at($medium) {
+    width: 134px;
+    width: 8%;
+  }
+
+  @include start-at($large) {
     width: 164px;
     width: 12%;
   }
+
   //width: 10%;
 }
 
@@ -75,9 +104,10 @@
   top: 0;
   left: 0;
   width: 100%;
- // height: 100%;
+  // height: 100%;
   z-index: 1;
 }
+
 .hero__subtract-bottom-right-lg,
 .hero__subtract-bottom-right-sm {
   position: absolute;
@@ -106,10 +136,12 @@
       display: none;
     }
   }
+
   .hero__subtract-bottom-right-sm {
     display: none;
+
     @include start-at($medium) {
-    display: block;
+      display: block;
     }
   }
 
@@ -150,6 +182,7 @@
       height: 100%;
       background: $black;
       z-index: 1;
+      border-radius: 40px;
     }
 
     .hero--programs__shape {
@@ -165,10 +198,7 @@
 }
 
 
-.hero__content > svg {
-
-
-}
+.hero__content>svg {}
 
 .coin {
   transition: transform 0.6s ease;
@@ -206,9 +236,11 @@
   0% {
     transform: scaleY(1);
   }
+
   50% {
     transform: scaleY(0);
   }
+
   100% {
     transform: scaleY(1);
   }
@@ -218,6 +250,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -226,14 +259,37 @@
 .bounce {
   display: block;
 }
+
 .bounce:hover {
   animation: bounce 1s ease-out forwards;
 }
 
 @keyframes bounce {
-  0%   { transform: translateY(0); }
-  20%  { transform: translateY(-30px); } /* First, high bounce */
-  40%  { transform: translateY(0); }
-  70%  { transform: translateY(-15px); } /* Second, smaller bounce */
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-30px);
+  }
+
+  /* First, high bounce */
+  40% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-15px);
+  }
+
+  /* Second, smaller bounce */
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero__content--resource-back {
+  display: inline-flex;
+  justify-content: flex-start;
+  text-decoration: none !important;
 }

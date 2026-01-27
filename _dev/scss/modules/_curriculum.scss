@@ -1,0 +1,120 @@
+// ---------------------------------------------------------------------
+// Curriculum Sections
+// ---------------------------------------------------------------------
+
+.curriculum-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+
+.resource {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 24px 0;
+  border-bottom: 1px solid $gray-light;
+  text-decoration: none !important;
+  color: $black;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $border-color;
+
+    svg {
+      transform: translate3d(4px, -4px, 0);
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    margin-bottom: 6px;
+  }
+
+  cite {
+    color: $gray-text;
+    font-family: $mono;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+  }
+
+}
+
+
+.resource-bg-shape-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+
+  .resource-bg-shape {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    z-index: -1;
+
+    @include stop-at($large) {
+      top: 0;
+      right: -50px;
+      opacity: 0.4;
+    }
+  }
+}
+
+.resource-content {
+  max-width: 888px;
+}
+
+
+.resource-author {}
+
+.resource-author__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 24px;
+  width: 200px;
+  overflow: hidden;
+
+  @include stop-at($small) {
+    width: 140px;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.resource-content--main {
+
+  hr {
+    height: 3px;
+    background: $black;
+    margin: 48px 0 24px;
+
+    @include start-at($small) {
+      margin: 80px 0 24px;
+    }
+  }
+
+  li {
+    color: #6F6F6F;
+
+    a {
+      color: #6F6F6F;
+    }
+  }
+}

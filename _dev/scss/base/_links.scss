@@ -26,7 +26,7 @@
     padding: 0 24px;
     transition: all .4s;
 
-    + span {
+    +span {
       padding: 0;
     }
   }
@@ -44,7 +44,8 @@
     span {
       padding-right: 60px;
     }
-    span + span {
+
+    span+span {
       padding-right: 0;
       transform: translate3d(-54px, 0, 0);
 
@@ -67,7 +68,8 @@
       padding-right: 60px;
       transform: translate3d(34px, 0, 0);
     }
-    span + span {
+
+    span+span {
       padding-right: 0;
       transform: translate3d(-24px, 0, 0);
 
@@ -121,14 +123,29 @@
     color: $gray-text;
   }
 
-  svg {
+  svg {}
+}
 
+.btn-standard--dark {
+  background-color: $black;
+  color: $white;
+  border-color: $black;
+  height: 48px;
+
+  svg {
+    fill: currentColor;
+  }
+
+  &:hover {
+    background-color: $white;
+    border-color: $black;
+    color: $black;
   }
 }
 
-p + .btn,
-ul + .btn,
-ol + .btn {
+p+.btn,
+ul+.btn,
+ol+.btn {
   margin-top: 24px;
 
   @include start-at($medium) {

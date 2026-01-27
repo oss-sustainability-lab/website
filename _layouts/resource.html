@@ -1,0 +1,133 @@
+---
+layout: default
+---
+
+<article class="resource-article">
+  <section class="hero hero--programs">
+    {% assign section_display = 'all' %}
+    {% if page.section_title %}
+    {% for section in site.data.cirrciulum %}
+    {% if section.title == page.section_title %}
+    {% unless section_display != 'all' %}
+    {% assign section_index = forloop.index %}
+    {% if section_index < 10 %} {% assign section_number='0' | append: section_index %} {% else %} {% assign
+      section_number=section_index %} {% endif %} {% assign section_display=section_number | append: ' ' | append:
+      section.title %} {% endunless %} {% endif %} {% endfor %} {% endif %} <a
+      class="hero__content hero__content--resource-back" href="{{ site.baseurl }}/curriculum/#curriculum">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <path
+          d="M9.99951 33.3337H6.6665V6.66669H10.0005L9.99951 33.3337ZM23.3335 28.3337H20.0005V24.9997H23.3335V28.3337ZM20.0005 18.3337H33.3335V21.6667H19.9995V24.9997H16.6665V21.6667H13.3335V18.3337H16.6665V14.9997H20.0005V18.3337ZM23.3335 14.9997H20.0005V11.6667H23.3335V14.9997Z"
+          fill="white" />
+      </svg>
+      <h2 class="subheading m-0">{{ section_display }}</h2>
+      </a>
+      <div class="hero__content__bottom">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <svg class="hero--programs__shape" viewBox="0 0 654 196">
+        <path
+          d="M630,0H0v196h490c13.3,0,24-10.7,24-24v-92c0-13.3,10.7-24,24-24h92c13.2,0,24-10.7,24-24v-8c0-13.3-10.8-24-24-24Z"
+          fill="#0f0f0f" />
+      </svg>
+
+      <svg class="hero__subtract-top-right" viewBox="0 0 164 164">
+        <path d="M0,0c13.3,0,24,10.7,24,24v92c0,13.3,10.7,24,24,24h92c13.2,0,24,10.7,24,24V0H0Z" fill="#fff" />
+      </svg>
+  </section>
+
+
+
+  <div class="wrapper py-6 py-lg-8">
+    <div class="resource-content">
+      {% if page.excerpt %}
+      <div class="rte rte--xlg rte--light">
+        <p>{{ page.excerpt }}</p>
+      </div>
+      <hr class="hr--thick mt-6 mb-5 " />
+      {% endif %}
+
+      {% if content %}
+      <div class="rte rte--lg rte--light resource-content--main">
+        <p class="subheading mb-5">Essay</p>
+        {{ content }}
+      </div>
+      {% endif %}
+
+
+
+      {% comment %} Look up author from data file if page.author is a string key {% endcomment %}
+      {% if site.data.authors[page.author] %}
+      {% assign author = site.data.authors[page.author] %}
+      {% elsif page.author.name %}
+      {% assign author = page.author %}
+      {% else %}
+      {% comment %} Fallback: create a minimal author object from string {% endcomment %}
+      {% assign author = null %}
+      {% endif %}
+
+      {% if author %}
+      <footer class="resource-author mt-8">
+        <hr class="hr--thick mb-4" />
+        <h2 class="">Presenter Bio</h2>
+
+        {% if author.img %}
+        <figure class="resource-author__image mb-4">
+          <img src="{{ site.baseurl }}/assets/images/authors/{{ author.img }}" alt="{{ author.name }}" />
+        </figure>
+        {% endif %}
+
+        <h4 class="subheading">{{ author.name }}</h4>
+        {% if author.bio %}
+        <div class="resource-author__bio">
+          <div class="rte rte--lg rte--light">
+            {{ author.bio | markdownify }}
+          </div>
+        </div>
+        {% endif %}
+      </footer>
+      {% endif %}
+
+    </div>
+  </div>
+
+
+
+
+  <div class="wrapper pb-8">
+    <a class="btn-standard btn-standard--dark" href="{{ site.baseurl }}/curriculum/#curriculum">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M5.99951 19.9998H3.99951V3.99976H5.99951V19.9998ZM13.9995 16.9998H11.9995V14.9998H13.9995V16.9998ZM11.9995 10.9998H19.9995V12.9998H11.9995V14.9998H9.99951V12.9998H7.99951V10.9998H9.99951V8.99976H11.9995V10.9998ZM13.9995 8.99976H11.9995V6.99976H13.9995V8.99976Z"
+          fill="currentColor" />
+      </svg>
+      <span>Back</span>
+    </a>
+  </div>
+</article>
+
+
+
+<div class="resource-bg-shape-wrapper">
+  <svg class="resource-bg-shape" width="467" height="568" viewBox="0 0 467 568" fill="none">
+    <g filter="url(#filter0_f_212_2715)">
+      <path
+        d="M356.606 367.007C361.586 371.975 368.343 374.766 375.388 374.766L441.291 374.793C453.835 374.798 464 384.942 464 397.455V465.232C464 477.75 453.823 487.898 441.272 487.893L373.299 487.86C360.75 487.854 350.584 477.701 350.593 465.182L350.64 399.349C350.64 393.312 347.14 384.881 342.86 380.612L341.942 379.696C336.959 374.726 330.205 371.933 323.16 371.933H171.194C166.1 371.933 161.213 373.954 157.611 377.547C154.186 380.964 152.261 385.596 152.261 390.43V420.104C152.261 432.619 142.09 442.766 129.544 442.766H102.738C90.1989 442.766 80.031 432.631 80.0211 420.122L80 393.405C79.9901 380.883 90.1639 370.726 102.717 370.726H132.069C137.191 370.726 142.102 368.698 145.721 365.086L146.552 364.258C149.964 360.854 151.881 356.237 151.881 351.424L151.845 198.14C151.842 185.623 162.014 175.473 174.563 175.473H326.006C336.346 175.473 344.729 167.112 344.729 156.796V102.662C344.729 90.1442 354.901 79.9975 367.45 80L420.664 80.0106C433.213 80.0131 443.382 90.1647 443.377 102.683L443.353 155.759C443.346 168.247 433.218 178.375 420.699 178.383L413.896 178.384H368.542C357.654 178.384 348.824 185.797 348.824 198.053V348.27C348.824 355.298 351.622 362.036 356.606 367.007Z"
+        fill="url(#paint0_linear_212_2715)" />
+    </g>
+    <defs>
+      <filter id="filter0_f_212_2715" x="0" y="0" width="544" height="567.893" filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_212_2715" />
+      </filter>
+      <linearGradient id="paint0_linear_212_2715" x1="182.666" y1="228.595" x2="410" y2="439"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#00FFFF" />
+        <stop offset="0.5" stop-color="#00FF00" />
+        <stop offset="1" stop-color="#FFC0CB" />
+      </linearGradient>
+    </defs>
+  </svg>
+</div>

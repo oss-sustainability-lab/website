@@ -57,6 +57,12 @@ hr {
   width: 100%;
 }
 
-img, svg {
+.hr--thick {
+  height: 3px;
+  background: $black;
+}
+
+img,
+svg {
   display: block;
 }
