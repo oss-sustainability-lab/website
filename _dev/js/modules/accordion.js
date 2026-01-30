@@ -25,6 +25,11 @@ class Accordion {
 			const $accordionBd = $accordion.find('.accordion__bd > div');
 			const $accordionIcon = $accordion.find('.accordion__icon');
 
+			// Skip if this accordion has empty description (handled by CSS)
+			if ($accordion.hasClass('has-empty-description')) {
+				return;
+			}
+
 			// Check if the div inside accordion__bd is empty or only contains whitespace
 			const content = $accordionBd.html().trim();
 			const isEmpty = content === '' || content === '<br>' || content === '<br/>';
@@ -47,6 +52,12 @@ class Accordion {
 		acc.click(function () {
 			var el = $(this);
 			var par = el.parents('.accordion');
+
+			// Don't allow clicking if accordion has empty description
+			if (par.hasClass('has-empty-description')) {
+				return;
+			}
+
 			var bd = par.find('.accordion__bd');
 			if (par.hasClass('is-open')) {
 				bd.slideUp();

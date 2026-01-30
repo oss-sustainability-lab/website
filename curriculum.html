@@ -180,7 +180,11 @@ permalink: /curriculum/
       {% for section in site.data.cirrciulum %}
       {% assign section_slug = section.title | slugify %}
       <section id="{{ section_slug }}">
-        <div class="accordion">
+        {% assign desc_empty = true %}
+        {% if section.description and section.description != '' %}
+        {% assign desc_empty = false %}
+        {% endif %}
+        <div class="accordion{% if desc_empty %} has-empty-description{% endif %}">
           <div class="accordion__hd">
             <h3 class="accordion__title h2">
               {% if forloop.index < 10 %}0{% endif %}{{ forloop.index }} <span class="underline-blue">{{ section.title
@@ -204,7 +208,10 @@ permalink: /curriculum/
                 <h3 class="h4">Highlighted Resources</h3>
                 <ul>
                   {% for resource in section.highlightedResources %}
-                  <li><a href="{{ site.baseurl }}/resources/{{ resource.slug }}/">{{ resource.title }}</a></li>
+                  <li><a
+                      href="{% if resource.url %}{{ resource.url }}{% else %}{{ site.baseurl }}/resources/{{ resource.slug }}/{% endif %}"
+                      {% if resource.url %}target="_blank" rel="noopener noreferrer" {% endif %}>{{
+                      resource.title }}</a></li>
                   {% endfor %}
                 </ul>
                 {% endif %}
@@ -214,7 +221,9 @@ permalink: /curriculum/
         </div>
 
         {% for resource in section.resources %}
-        <a class="resource" href="{{ site.baseurl }}/resources/{{ resource.slug }}/">
+        <a class="resource"
+          href="{% if resource.url %}{{ resource.url }}{% else %}{{ site.baseurl }}/resources/{{ resource.slug }}/{% endif %}"
+          {% if resource.url %}target="_blank" rel="noopener noreferrer" {% endif %}>
           <div>
             <h4>{{ resource.title }}</h4>
             <cite>{{ resource.author }}</cite>

@@ -56,6 +56,16 @@
             </svg>
           </a>
         </li>
+        <li {% if page.id=='curriculum' %}class="is-active" {% endif %}>
+          <a href="{{ site.baseurl }}/curriculum/">
+            <span>Curriculum</span>
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+              <path
+                d="M6.66667 18.8333V22.1666H26.6667V25.5H30V22.1666H33.3333V18.8333H30V15.5H26.6667V18.8333H6.66667ZM23.3333 12.1666H26.6667V15.5H23.3333V12.1666ZM23.3333 12.1666H20V8.83331H23.3333V12.1666ZM23.3333 28.8333H26.6667V25.5H23.3333V28.8333ZM23.3333 28.8333H20V32.1666H23.3333V28.8333Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </li>
         <li {% if page.id=='team' %}class="is-active" {% endif %}>
           <a href="{{ site.baseurl }}/team/">
             <span>Team</span>

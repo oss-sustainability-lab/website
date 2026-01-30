@@ -30,7 +30,7 @@
       slug: ""
   resources:
     - title: Governance
-      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      url: 
       author: OSS LAB
       slug: governance
 
@@ -40,11 +40,9 @@
   highlightedResources: []
   resources:
     - title: Fundraising in the Open
-      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
       author: Emma Irwin
       slug: fundraising-in-the-open
     - title: Membership Models
-      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
       author: Michelle Barker
       slug: membership-models
 
@@ -54,7 +52,6 @@
   highlightedResources: []
   resources:
     - title: Design
-      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
       author: Eriol Fox
       slug: design
 
@@ -64,6 +61,6 @@
   highlightedResources: []
   resources:
     - title: Dashboards and more
-      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      url: https://outrageous-aftershave-22a.notion.site/OSS-Sustainability-Lab-2025-Cohort-Syllabus-24537b301040800f88f3d4f0592685c7
       author: OSS LAB
       slug: dashboards-and-more

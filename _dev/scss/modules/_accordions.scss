@@ -152,6 +152,30 @@
     }
   }
 
+  &.has-empty-description {
+    .accordion__icon {
+      display: none !important;
+    }
+
+    .accordion__hd {
+      cursor: default !important;
+
+      &:hover {
+        cursor: default !important;
+
+        .accordion__title {
+          opacity: 1 !important;
+        }
+
+        .underline-blue {
+          &:after {
+            opacity: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
   @media (min-width: 782px) {
     .accordion__hd {
       text-align: left;
