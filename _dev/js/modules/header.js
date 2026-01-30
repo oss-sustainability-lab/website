@@ -4,7 +4,7 @@ const $ = require('jquery');
 
 class Header {
 
-	constructor( options ) {
+	constructor(options) {
 
 		var el = $('#site-header'),
 			w = $(window),
@@ -15,45 +15,43 @@ class Header {
 
 		var threshold = 120;
 
-		if($('.block-video-hero').length) {
+		if ($('.block-video-hero').length) {
 			threshold = 820;
 		}
 
 		d.addEventListener("scroll", function () {
-      if (w.scrollTop() >= threshold) {
-        b.addClass('is-sticky');
-      } else {
-        b.removeClass('is-sticky');
-      }
+			if (w.scrollTop() >= threshold) {
+				b.addClass('is-sticky');
+			} else {
+				b.removeClass('is-sticky');
+			}
 
-      var st = window.pageYOffset || document.documentElement.scrollTop;
-      if (st > lastScrollTop) {
-        if (b.hasClass('scrolling-up')) {
-          b.removeClass('scrolling-up')
-        }
-      } else {
-        if (!b.hasClass('scrolling-up')) {
-          b.addClass('scrolling-up');
-        }
-      }
-      lastScrollTop = st <= 0 ? 0 : st;
-    }, false);
+			var st = window.pageYOffset || document.documentElement.scrollTop;
+			if (st > lastScrollTop) {
+				if (b.hasClass('scrolling-up')) {
+					b.removeClass('scrolling-up')
+				}
+			} else {
+				if (!b.hasClass('scrolling-up')) {
+					b.addClass('scrolling-up');
+				}
+			}
+			lastScrollTop = st <= 0 ? 0 : st;
+		}, false);
 
-		$(document).ready(function(){
+		$(document).ready(function () {
 			if ($(document).scrollTop() >= threshold) {
 				b.addClass('is-sticky');
 			}
 		});
 
 
-		$('.js-menu-trigger').click(function(e){
+		$('.js-menu-trigger').click(function (e) {
 			e.preventDefault();
-			if( $('body').hasClass('menu-is-open') ) {
+			if ($('body').hasClass('menu-is-open')) {
 				$('body').removeClass('menu-is-open');
-				menuImgs.removeClass('is-active');
 			} else {
 				$('body').addClass('menu-is-open');
-				$(menuImgs[Math.floor(Math.random()*menuImgs.length)]).addClass('is-active');
 			}
 		});
 
