@@ -12,10 +12,10 @@ excerpt: "In this module, Michelle Barker shares resources collected while build
 <iframe width="560" height="315" src="https://www.youtube.com/embed/INoR2FPEfwk?si=oW_sO6alA22r1zYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-## Slides
-
-<a href="https://docs.google.com/presentation/d/1c04qrdlPvLF1Sof9lp0IuME_edZbOCyF/edit?slide=id.g3abad7b3032_0_73#slide=id.g3abad7b3032_0_73" target="_blank" rel="noopener">View the slides</a>
-
+### View the slides
+<div class="embed-wrap">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQxDaYnfBfhVsr7-g-pfbuBuiGwsWOQE4FjR9kePr4f-ccBPVfUFc9OQOvHJqwXyw/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="1920" height="1109" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
 ---
 
 ## Linked Resources
