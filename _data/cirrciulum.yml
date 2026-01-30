@@ -3,7 +3,7 @@
   description: The visioning chapter grounds the OSS Lab curriculum in a unique approach to sustainability, grounded in taking stock of relationships, the framework of abolition, and the connection of both to our individual and institutional capacities for change. The two modules feature lighting talks by Miliaku Nwabueze and Camille Acey and explore different approaches to these ideas. The talks are accompanied by exercises and activities as well as suggested readings.
   highlightedResources:
     - title: The Abolitionist Horizon
-      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+      url: https://transformharm.org/wp-content/uploads/2022/11/abolition-zine-digital-final.pdf
       author: Miliaku Nwabueze
       slug: the-abolitionist-horizon
   resources:
@@ -16,10 +16,18 @@
       author: Camille Acey
       slug: sunsetting
 
-- section: Health Organizations
-  title: Health Organizations
-  description: This section explores how to build and maintain healthy organizational structures within open source projects. Learn about governance models, decision-making processes, and creating sustainable organizational practices that support long-term project viability.
-  highlightedResources: []
+- section: Healthy Organizations
+  title: Healthy Organizations
+  description: This chapter builds from the previous one to support strong visions with healthy organizational culture and sound governance. The central module outlines the importance of building intentional governance from the beginning. Highlighted resources work with you to 1) articulate your values and how they are reflected in your work, and 2) help you identify what kind of governance you have, how well it's working, and what else might better align with your values, vision, and capacity.
+  highlightedResources:
+    - title: White supremacy culture
+      url: https://apeoplesliberationhistory.org/wp-content/uploads/2021/04/WhiteSupremacyCulture.pdf
+      author: ""
+      slug: ""
+    - title: Community Rule
+      url: https://communityrule.info/
+      author: ""
+      slug: ""
   resources:
     - title: Governance
       url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
@@ -28,7 +36,7 @@
 
 - section: Revenue
   title: Revenue
-  description: Understanding how to generate and manage revenue is crucial for project sustainability. This module covers various funding models, membership structures, and strategies for financial sustainability in open source projects.
+  description: "Everybody's pain point: fundraising. This chapter features lightning talks from Emma Irwin and Dr. Michelle Barker and gives practical tips around developing alternative revenue streams, approaching funders, and mapping your ecosystem."
   highlightedResources: []
   resources:
     - title: Fundraising in the Open
@@ -42,7 +50,7 @@
 
 - section: Healthy Communities
   title: Healthy Communities
-  description: Building and nurturing healthy communities is essential for open source project success. This section focuses on community design, engagement strategies, and creating inclusive spaces that foster collaboration and growth.
+  description: This chapter rounds out the curriculum in considering how your sharp vision, aligned values, sound governance, and successful fundraising resonate with communities you intend to reach. Lighting talk by Eriol Fox centers critical intervention points for design within the software production timeline. Highlighted resources invite you to consider where you are in your project's timeline, connecting back to earlier sessions on visioning.
   highlightedResources: []
   resources:
     - title: Design
@@ -52,7 +60,7 @@
 
 - section: Metrics
   title: Metrics
-  description: Measuring what matters helps projects understand their health and make data-driven decisions. This module explores dashboards, metrics, and analytics tools that can help you track project sustainability and community health.
+  description: ""
   highlightedResources: []
   resources:
     - title: Dashboards and more

@@ -22,7 +22,7 @@ title: Open Source Sustainability
 email: oss.sustainability.lab@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The OSS Sustainability Lab targets skills scientific researchers historically struggle with -- like community engagement, interdisciplinary networking, mentorship and professional pipelines, and measuring community health.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://oss-sustainability-lab.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:

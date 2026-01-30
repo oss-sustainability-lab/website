@@ -100,6 +100,20 @@
 
 .resource-content--main {
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $black;
+    margin-top: 48px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
   hr {
     height: 3px;
     background: $black;
@@ -116,5 +130,25 @@
     a {
       color: #6F6F6F;
     }
+  }
+}
+
+.slides-wrap,
+.video-wrap,
+.embed-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  margin: 24px 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 }
