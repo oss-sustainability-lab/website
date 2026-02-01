@@ -100,8 +100,8 @@ permalink: /curriculum/
 
       <p>For example, in psychiatry, "insight" is the capacity to recognize and accept one is suffering from a disease.
         When we say "this work is unsustainable" we might mean: "I feel unwell doing it" but we often can't see the big
-        picture, what is making it feel so bad. We struggle to diagnose the disease, saying if we had more $, more
-        people it would be better. Often, however, 'more' isn't actually a sustainable solution. More grants means more
+        picture, what is making it feel so bad. We struggle to diagnose the disease, saying if we had more money, more
+        people, it would be better. Often, however, 'more' isn't actually a sustainable solution. More grants means more
         reporting, more staff/contractors to manage; et al.</p>
 
       <p>But comradery, connection, relationships, and trial and error can help us identify what about what we are doing
@@ -115,8 +115,8 @@ permalink: /curriculum/
       <p>Very little about any of our work today is 'sustainable' (climate, care, incentive structures, et al.). We
         don't have a fix for these. But! We can work together to shift our behaviors and produce change.</p>
 
-      <p>Join us in 8 modules designed to help you develop insight, articulate your values, iterate on solutions, drive
-        you into community, discover what you can stop, and become more sustainable.</p>
+      <p>Join us in six modules designed to help you develop insight, articulate your values, iterate on solutions,
+        drive you into community, discover what you can stop, and become more sustainable.</p>
     </div>
   </div>
 </div>
@@ -155,8 +155,8 @@ permalink: /curriculum/
     </div>
     <div class="rte rte--lg rte--light">
       <p>And let us know how it goes for you! We want to hear about your journey. Similarly, if you are a funder or
-        other institution interested in providing synchronous support for your grantees/teams/project, you can reach Lab
-        facilitators at <a href="mailto:oss.sustainability.lab@gmail.com">oss.sustainability.lab@gmail.com</a>.</p>
+        other institution interested in providing synchronous support for your grantees/ teams/ project, you can reach
+        Lab facilitators at <a href="mailto:oss.sustainability.lab@gmail.com">oss.sustainability.lab@gmail.com</a>.</p>
     </div>
 
   </div>
@@ -203,9 +203,25 @@ permalink: /curriculum/
             <div>
               <div class="rte rte--lg rte--light">
                 <p>{{ section.description }}</p>
-                {% if section.highlightedResources.size > 0 %}
+                {% if section.labExercises and section.labExercises.size > 0 %}
+                <br />
+                <h3 class="h4">Lab Exercises</h3>
+                <ul>
+                  {% for exercise in section.labExercises %}
+                  <li><a
+                      href="{% if exercise.url %}{{ exercise.url }}{% else %}{{ site.baseurl }}/resources/{{ exercise.slug }}/{% endif %}"
+                      {% if exercise.url %}target="_blank" rel="noopener noreferrer" {% endif %}>{{
+                      exercise.title }}</a></li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+                {% if section.highlightedResources.size > 0 or section.highlightedResourcesPara %}
                 <br />
                 <h3 class="h4">Highlighted Resources</h3>
+                {% if section.highlightedResourcesPara %}
+                <p>{{ section.highlightedResourcesPara }}</p>
+                {% endif %}
+                {% if section.highlightedResources.size > 0 %}
                 <ul>
                   {% for resource in section.highlightedResources %}
                   <li><a
@@ -214,6 +230,7 @@ permalink: /curriculum/
                       resource.title }}</a></li>
                   {% endfor %}
                 </ul>
+                {% endif %}
                 {% endif %}
               </div>
             </div>

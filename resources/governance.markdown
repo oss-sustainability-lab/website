@@ -5,7 +5,7 @@ id: resource
 permalink: /resources/governance/
 author: dawn-foster
 section_title: Healthy Organizations
-excerpt: "In this module, OSS Lab shares resources and exercises around building sound governance. In her lighting talk, Dawn Foster lays out the importance of building sound governance before you need it, and Lab exercises guide teams through processes of articulating values and identifying existing processes and capacities."
+excerpt: "In this module, Dawn Foster lays out the importance of building sound governance before you need it, and the Lab exercises guide teams through processes of articulating values and identifying existing processes and capacities."
 ---
 
 <div class="embed-wrap">

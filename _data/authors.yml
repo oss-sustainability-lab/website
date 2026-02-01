@@ -1,18 +1,15 @@
 miliaku-nwabueze:
   name: Miliaku Nwabueze
-  img: Miliaku-Nwabueze.png
   bio: |
     Miliaku Nwabueze is a chaos orchestrator, glitch enthusiast, and constellation architect born in Detroit, rooted in Atlanta, and tinkering away in liminality. A <a href="https://just-tech.ssrc.org/our-network/miliaku-nwabueze/" target="_blank" rel="noopener">2024–2026 Just Tech fellow</a>, her current focus is digital marronage, or attempting a collective exodus from the hegemonic web. Queer, Black, and Igbo, she writes, designs, and dances toward the endings of this world. Relationships are her medium. <a href="https://www.miliaku.com/" target="_blank" rel="noopener">www.miliaku.com</a>
 
 oss-lab:
   name: OSS LAB
-  img: oss.svg
   bio: |
     The OSS Sustainability Lab is a collaborative research initiative focused on sustainable open source practices.
 
 eriol-fox:
   name: Eriol Fox
-  img: eriol-fox.jpg
   bio: |
     <strong>Eriol Fox</strong> has been working as a designer for 15+ years working in for-profits and then NGO's and open-source software organisations, working on complex problems like sustainable food systems, peace-building, crisis response technology, private secure communication tools and censorship circumvention OSS. Eriol now works on smart hardware in the design team at a large OSS foundation.
     
@@ -32,7 +29,7 @@ camille-acey:
 emma-irwin:
   name: Emma Irwin
   bio: |
-    Bio information for Emma Irwin will go here.
+    Emma Irwin has over 20 years' experience building with and for open source projects and their communities. Her experience spans multiple ‘open’ ecosystems including open data, education, science, access and innovation with recognized expertise in open source engineering, sustainability, security, metrics, D&I and community building. She's provided expertise and insight in roles at Microsoft, Mozilla, Benetech as well as Royal Roads University, Canada's Open Data Stakeholders Forum, and the United Round table on metrics for digital safety. Emma is currently co-chair of CHAOSS working group: AI Alignment in Open Source and founder of Open Source Wishlist.
 
 michelle-barker:
   name: Michelle Barker
@@ -42,4 +39,4 @@ michelle-barker:
 dawn-foster:
   name: Dawn Foster
   bio: |
-    Bio information for Dawn Foster will go here.
+    Dr. Dawn Foster provides consulting services around open source strategy, contributor strategy, improving project governance, and similar topics. She also works as the Director of Data Science for the CHAOSS project where she is a board member, working group lead, and maintainer. Dawn is an OpenUK board member, and was previously a co-chair of the CNCF Contributor Strategy Technical Advisory Group. She has 20+ years of experience at companies like VMware and Intel with expertise in community, strategy, governance, metrics, and more. She has spoken at over 100 industry events and has a BS in computer science, an MBA, and a PhD. In her spare time she enjoys reading science fiction, running, 3D printing, and traveling.

@@ -5,7 +5,7 @@ id: resource
 permalink: /resources/fundraising-in-the-open/
 author: emma-irwin
 section_title: Revenue
-excerpt: "In this module, Emma Irwin shares insights about fundraising for open source software projects in particular. Her talk identifies the unique aspects about the funding and contribution ecosystem for open source for science and gives teams specific suggestions about how to think about building revenue and capacity streams for their projects."
+excerpt: "In this module, Emma Irwin shares insights about fundraising for open source software projects in particular. Her talk identifies the unique  aspects about the funding and contribution ecosystem for open source for science and gives teams specific suggestions about how to think about building revenue and capacity streams for their projects."
 ---
 
 <div class="embed-wrap">

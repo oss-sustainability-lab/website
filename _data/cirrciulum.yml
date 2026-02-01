@@ -18,7 +18,10 @@
 
 - section: Healthy Organizations
   title: Healthy Organizations
-  description: This chapter builds from the previous one to support strong visions with healthy organizational culture and sound governance. The central module outlines the importance of building intentional governance from the beginning. Highlighted resources work with you to 1) articulate your values and how they are reflected in your work, and 2) help you identify what kind of governance you have, how well it's working, and what else might better align with your values, vision, and capacity.
+  description: This chapter builds from the previous one to support strong visions with healthy organizational culture and sound governance. The central module outlines the importance of building intentional governance from the beginning. Highlighted resources work with you to 1) articulate your values and how they are reflected in your work, and 2)  help you identify what kind of governance you have, how well it’s working, and what else might better align with your values, vision, and capacity.
+  labExercises:
+    - title: OSS Lab Governance Worksheet
+      url: https://docs.google.com/document/d/14kbqcC7Hqo-pnGoeE4FCNM2JjdXVz51qSRjmuVLqnjg/edit?tab=t.0#heading=h.cg3qe5x3895q
   highlightedResources:
     - title: White supremacy culture
       url: https://apeoplesliberationhistory.org/wp-content/uploads/2021/04/WhiteSupremacyCulture.pdf
@@ -37,6 +40,7 @@
 - section: Revenue
   title: Revenue
   description: "Everybody's pain point: fundraising. This chapter features lightning talks from Emma Irwin and Dr. Michelle Barker and gives practical tips around developing alternative revenue streams, approaching funders, and mapping your ecosystem."
+  highlightedResourcesPara: "Have you mapped your ecosystem? So many ways to do it! (see <a href=\"https://access2perspectives.org/mapping-open-science-resources/\" target=\"_blank\" rel=\"noopener\">here</a> and <a href=\"https://www.linkedin.com/posts/jduck_ive-updated-the-map-of-scientific-oss-based-activity-7365871336780431361-f3nj\" target=\"_blank\" rel=\"noopener\">here</a>). What would your map look like? Where are you located? How does knowing your ecosystem affect who you tap for financial support and how?"
   highlightedResources: []
   resources:
     - title: Fundraising in the Open
