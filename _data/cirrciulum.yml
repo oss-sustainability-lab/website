@@ -34,7 +34,7 @@
   resources:
     - title: Governance
       url: 
-      author: OSS LAB
+      author: Dawn Foster
       slug: governance
 
 - section: Revenue
@@ -55,7 +55,7 @@
   description: This chapter rounds out the curriculum in considering how your sharp vision, aligned values, sound governance, and successful fundraising resonate with communities you intend to reach. Lighting talk by Eriol Fox centers critical intervention points for design within the software production timeline. Highlighted resources invite you to consider where you are in your project's timeline, connecting back to earlier sessions on visioning.
   highlightedResources: []
   resources:
-    - title: Design
+    - title: Inclusive and Usable Design
       author: Eriol Fox
       slug: design
 
