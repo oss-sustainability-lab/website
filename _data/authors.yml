@@ -40,3 +40,8 @@ dawn-foster:
   name: Dawn Foster
   bio: |
     Dr. Dawn Foster provides consulting services around open source strategy, contributor strategy, improving project governance, and similar topics. She also works as the Director of Data Science for the CHAOSS project where she is a board member, working group lead, and maintainer. Dawn is an OpenUK board member, and was previously a co-chair of the CNCF Contributor Strategy Technical Advisory Group. She has 20+ years of experience at companies like VMware and Intel with expertise in community, strategy, governance, metrics, and more. She has spoken at over 100 industry events and has a BS in computer science, an MBA, and a PhD. In her spare time she enjoys reading science fiction, running, 3D printing, and traveling.
+
+sean-goggins:
+  name: Sean Goggins
+  bio: |
+    Sean Goggins is a software engineer turned professor with experience designing, studying, and building sociotechnical systems for measuring learning, compliance, software health, online community, cardiac health, and civic engagement, among others. Sean co-founded the CHAOSS project, led the creation of his university's master's program in data science and analytics, and is an Augur maintainer. Augur is one of the leading open source software health and sustainability metrics tools, and the only one with a scientific impact data pipeline. As a sociotechnical researcher and author of nearly 200 academic papers, Sean is driven to ensure that metrics serve our projects and avoid the dangers of casual misuse. 

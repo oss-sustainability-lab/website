@@ -64,7 +64,7 @@
   description: ""
   highlightedResources: []
   resources:
-    - title: Dashboards and more
-      url: https://outrageous-aftershave-22a.notion.site/OSS-Sustainability-Lab-2025-Cohort-Syllabus-24537b301040800f88f3d4f0592685c7
-      author: OSS LAB
-      slug: dashboards-and-more
+    - title: Using Open Source Software Metrics For Steering Community Progress
+      #url: 
+      author: Sean Goggins
+      slug: metrics
