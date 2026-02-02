@@ -21,12 +21,12 @@ excerpt: "In this module, CHAOSS Co-Founder and Augur Maintainer Sean Goggins di
 ---
 
 ## Linked Resources
-- [https://github.com/chaoss/augur](https://github.com/chaoss/augur)
-- [https://github.com/oss-aspen/8Knot](https://github.com/oss-aspen/8Knot)
-- [https://oss-sustainability-lab.com](https://oss-sustainability-lab.com)
-- [https://seangoggins.net](https://seangoggins.net)
-- [https://doi.org/10.5281/zenodo.18411415](https://doi.org/10.5281/zenodo.18411415)
-- [https://drive.google.com/file/d/10460FJCm1qfvXgXFsxohLR5478alHxJv/view?usp=sharing](https://drive.google.com/file/d/10460FJCm1qfvXgXFsxohLR5478alHxJv/view?usp=sharing)
-- [https://joss.augurlabs.io](https://joss.augurlabs.io)
-- [https://eightknot.osci.io](https://eightknot.osci.io)
-- [https://doi.org/10.48550/ARXIV.2504.16670](https://doi.org/10.48550/ARXIV.2504.16670)
+- <a href="https://github.com/chaoss/augur" target="_blank" rel="noopener noreferrer">https://github.com/chaoss/augur</a>
+- <a href="https://github.com/oss-aspen/8Knot" target="_blank" rel="noopener noreferrer">https://github.com/oss-aspen/8Knot</a>
+- <a href="https://oss-sustainability-lab.com" target="_blank" rel="noopener noreferrer">https://oss-sustainability-lab.com</a>
+- <a href="https://seangoggins.net" target="_blank" rel="noopener noreferrer">https://seangoggins.net</a>
+- <a href="https://doi.org/10.5281/zenodo.18411415" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/zenodo.18411415</a>
+- <a href="https://drive.google.com/file/d/10460FJCm1qfvXgXFsxohLR5478alHxJv/view?usp=sharing" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/10460FJCm1qfvXgXFsxohLR5478alHxJv/view?usp=sharing</a>
+- <a href="https://joss.augurlabs.io" target="_blank" rel="noopener noreferrer">https://joss.augurlabs.io</a>
+- <a href="https://eightknot.osci.io" target="_blank" rel="noopener noreferrer">https://eightknot.osci.io</a>
+- <a href="https://doi.org/10.48550/ARXIV.2504.16670" target="_blank" rel="noopener noreferrer">https://doi.org/10.48550/ARXIV.2504.16670</a>
