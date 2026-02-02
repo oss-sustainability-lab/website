@@ -21,12 +21,12 @@ excerpt: "In this module, CHAOSS Co-Founder and Augur Maintainer Sean Goggins di
 ---
 
 ## Linked Resources
-- https://github.com/chaoss/augur
-- https://github.com/oss-aspen/8Knot 
-- https://oss-sustainability-lab.com 
-- https://seangoggins.net 
-- https://doi.org/10.5281/zenodo.18411415 
-- https://drive.google.com/file/d/10460FJCm1qfvXgXFsxohLR5478alHxJv/view?usp=sharing 
-- https://joss.augurlabs.io 
-- https://eightknot.osci.io 
-- https://doi.org/10.48550/ARXIV.2504.16670
+- [https://github.com/chaoss/augur](https://github.com/chaoss/augur)
+- [https://github.com/oss-aspen/8Knot](https://github.com/oss-aspen/8Knot)
+- [https://oss-sustainability-lab.com](https://oss-sustainability-lab.com)
+- [https://seangoggins.net](https://seangoggins.net)
+- [https://doi.org/10.5281/zenodo.18411415](https://doi.org/10.5281/zenodo.18411415)
+- [https://drive.google.com/file/d/10460FJCm1qfvXgXFsxohLR5478alHxJv/view?usp=sharing](https://drive.google.com/file/d/10460FJCm1qfvXgXFsxohLR5478alHxJv/view?usp=sharing)
+- [https://joss.augurlabs.io](https://joss.augurlabs.io)
+- [https://eightknot.osci.io](https://eightknot.osci.io)
+- [https://doi.org/10.48550/ARXIV.2504.16670](https://doi.org/10.48550/ARXIV.2504.16670)
