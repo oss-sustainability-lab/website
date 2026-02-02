@@ -243,6 +243,9 @@ permalink: /curriculum/
           {% if resource.url %}target="_blank" rel="noopener noreferrer" {% endif %}>
           <div>
             <h4>{{ resource.title }}</h4>
+            {% if resource.desc %}
+            <p>{{ resource.desc }}</p>
+            {% endif %}
             <cite>{{ resource.author }}</cite>
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">

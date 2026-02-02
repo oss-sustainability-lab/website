@@ -36,6 +36,11 @@
     margin-bottom: 6px;
   }
 
+  p {
+    margin: 6px 0;
+    color: $gray-text;
+  }
+
   cite {
     color: $gray-text;
     font-family: $mono;
