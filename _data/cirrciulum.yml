@@ -69,15 +69,3 @@
       author: Sean Goggins
       slug: metrics
 
-- section: Bibliography
-  title: Resources
-  description: ""
-  # highlightedResources:
-  #   - title: View on the list
-  #       url: https://outrageous-aftershave-22a.notion.site/OSS-Sustainability-Lab-2025-Cohort-Syllabus-24537b301040800f88f3d4f0592685c7
-  resources:
-    - title: An incomplete list of writings and resources we used, learned from, and were inspired by.
-      desc: ""
-      url: https://outrageous-aftershave-22a.notion.site/24537b301040801bbc55ea3dee833731?v=24537b3010408056b9de000cfc8ee2ce
-      author: View the list
-      slug: metrics
