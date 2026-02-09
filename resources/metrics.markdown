@@ -9,13 +9,13 @@ excerpt: "In this module, CHAOSS Co-Founder and Augur Maintainer Sean Goggins di
 ---
 
 <div class="embed-wrap">
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f5Zyi8K6gHA?si=AO5ADt0NEO3jSYGb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 
 ### View the slides
-<div>
-<iframe src="https://drive.google.com/file/d/1e-0PRxf5BnQrXb08Sr4OXHIfOWqovUjf/preview" width="100%" height="680"></iframe>
+<div class="embed-wrap">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSg_Kt9kmV6gr4yCrV9wEP_0DVOODcMJoZAgGn3OBZQgOPFnqjJ3NgOH2pcXqpO6w/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="1920" height="1109" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 
 ---

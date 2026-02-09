@@ -23,3 +23,16 @@ excerpt: "In this module, Camille Acey foregrounds intentionality around closing
 ## Linked Resources
 
 - <a href="https://www.wind-down.org/about/" target="_blank" rel="noopener">The Wind Down</a>
+- <a href="https://www.wind-down.org/wp-content/uploads/2024/03/Sensing-an-ending-A-toolkit-for-nonprofit-leaders-to-help-decide-design-and-deliver-better-organisational-endings.pdf" target="_blank" rel="noopener">Sensing An Ending Toolkit - (useful guidance for sunsets)</a>
+- <a href="https://ssir.org/articles/entry/exit_strategies" target="_blank" rel="noopener">Exit Strategies (great article about a planned obsolescence organization)</a>
+- <a href="https://ssir.org/articles/entry/closing-nonprofits-exit-to-open" target="_blank" rel="noopener">Exit To Open (an emerging framework for winding down and sharing out digital data and IP)</a>
+- <a href="https://www.philanthropy.com/article/why-one-charity-chose-to-wind-down-while-still-flush-with-cash" target="_blank" rel="noopener">Why One Charity Chose To Wind Down While Still Flush With Cash</a>
+
+
+
+
+
+
+
+
+
